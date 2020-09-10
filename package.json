@@ -9,7 +9,12 @@
   },
   "dependencies": {
     "next": "9.5.3",
+    "postcss-preset-env": "^6.7.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.2",
+    "tailwindcss": "^1.8.6"
   }
 }
