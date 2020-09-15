@@ -2,15 +2,116 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Inter', sans-serif;
+  color: #444444;
+  background-color: #fafafa;
+}
+* {
+  box-sizing: border-box;
+}
+#body-border-top,
+#body-border-bottom,
+#body-border-left,
+#body-border-right {
+  background-color: #f1d1b5;
+  position: fixed;
+}
+#body-border-left,
+#body-border-right {
+  top: 0;
+  bottom: 0;
+  width: 20px;
+}
+#body-border-top,
+#body-border-bottom {
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+#body-border-left {
+  left: 0;
+}
+#body-border-right {
+  right: 0;
+}
+#body-border-top {
+  top: 0;
+}
+#body-border-bottom {
+  bottom: 0;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  border-bottom: 2px solid rgba(86, 142, 166, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+  color: #568ea6;
+  /* border-bottom: 2px solid rgba(107, 122, 143, 0.8); */
 }
 
-* {
-  box-sizing: border-box;
+.a_no-underline,
+.a_no-underline:hover {
+  /* box-shadow: none;
+  padding-bottom: initial; */
+  border-bottom: none;
 }
+
+#title {
+  background: linear-gradient(to right, #568ea6, #568ea6 50%, #444444 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: all 275ms ease;
+}
+#title:hover {
+  background-position: 0 100%;
+  font-weight: inherit;
+}
+
+.layout-title {
+  border: 2px solid black;
+  padding: 1rem;
+  border-right: none;
+}
+.layout-title:hover {
+  border-radius: 50%;
+  border: 2px solid #568ea6;
+}
+
+@media (max-width: 767px) {
+  #body-border-top,
+  #body-border-bottom {
+    height: 10px;
+  }
+  #body-border-left,
+  #body-border-right {
+    width: 10px;
+  }
+}
+
+/*
+#F18C8E, rgb(241, 140, 142)
+#F0B7A4, rgb(240, 183, 164)
+#F1D1B5, rgb(241, 209, 181)
+#568EA6, rgb(86, 142, 166)
+#305F72, rgb(48, 95, 114)
+*/
+
+/* OLD HOVER
+a {
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0px -0.65rem 0px 0px rgba(255, 184, 51, 0.3) inset;
+  padding-bottom: 0.1rem;
+  transition: all 0.2s ease-in-out;
+}
+a:hover {
+  padding-bottom: 0.3rem;
+  box-shadow: 0px -4px 0px 0px rgba(255, 184, 51, 0.7) inset;
+}
+*/
