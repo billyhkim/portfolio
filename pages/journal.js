@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import fs from 'fs';
 import matter from 'gray-matter';
+import SEO from '../components/SEO';
 
 export default function Journal({ posts }) {
   console.log(process.env.NEXT_PUBLIC_GA_TRACKING_ID);
   return (
     <>
+      <SEO title="Journal" />
       <div className="mb-12 text-4xl font-thin">
         <span className="text-red-400">—</span> Journal
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import SEO from '../../components/SEO';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -18,6 +19,10 @@ const CodeBlock = ({ language, value }) => {
 export default function Post({ content, frontmatter }) {
   return (
     <article>
+      <SEO
+        title={frontmatter.title}
+        description={frontmatter.description || post.excerpt}
+      />
       <Link href="/journal/">
         <a className="inline-block font-thin tracking-wider a_no-underline">
           ⭠BACK

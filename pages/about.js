@@ -1,8 +1,10 @@
+import SEO from '../components/SEO';
 import { FcDocument } from 'react-icons/fc';
 
 export default function About() {
   return (
     <>
+      <SEO title="About" />
       <div className="mb-12 text-4xl">
         <span className="text-red-400">—</span> About
       </div>

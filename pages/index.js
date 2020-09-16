@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import SEO from '../components/SEO';
 
 import { AiOutlineMail, AiOutlineLinkedin, AiFillGithub } from 'react-icons/ai';
 import { RiTwitterLine } from 'react-icons/ri';
@@ -6,6 +7,7 @@ import { RiTwitterLine } from 'react-icons/ri';
 export default function Home() {
   return (
     <>
+      <SEO title="Welcome" />
       <div className="text-4xl flex items-center justify-start w-screen h-screen px-16 sm:px-32 font-light">
         <div>
           <div className="font-bold text-5xl md:text-6xl mb-8">
