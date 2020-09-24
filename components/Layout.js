@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import HamburgerMenu from 'react-hamburger-menu';
+import Clock from './Clock';
 
 import { AiOutlineMail, AiOutlineLinkedin, AiFillGithub } from 'react-icons/ai';
 import { RiTwitterLine } from 'react-icons/ri';
@@ -121,7 +122,10 @@ export default function Layout({ children }) {
 
       <main className="mt-12">{children}</main>
       <footer className="pt-20 pb-16 text-sm font-thin tracking-wider">
-        <div className="inline-block text-2xl mb-2">
+        <div>
+          <Clock />
+        </div>
+        <div className="inline-block text-2xl my-2">
           <a
             className="a_no-underline mr-2 hover:text-orange-500"
             href="mailto:billyhkim.dev@gmail.com"
