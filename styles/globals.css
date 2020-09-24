@@ -4,6 +4,10 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   color: #444444;
+  background-color: #f1d1b5;
+}
+body {
+  min-height: 100vh;
   background-color: #fafafa;
 }
 * {
@@ -83,7 +87,34 @@ a:hover {
   border: 2px solid #568ea6;
 }
 
-@media (max-width: 767px) {
+/* MARKDOWN */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+blockquote {
+  color: #666666;
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border-left: 4px #cbd5e0 solid;
+}
+
+@media (max-width: 639px) {
   #body-border-top,
   #body-border-bottom {
     height: 10px;
