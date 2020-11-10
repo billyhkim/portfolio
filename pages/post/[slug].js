@@ -19,28 +19,28 @@ const CodeBlock = ({ language, value }) => {
 export default function Post({ content, frontmatter }) {
   return (
     <article>
-      <SEO
-        title={frontmatter.title}
-        description={frontmatter.description || post.excerpt}
-      />
-      <Link href="/journal/">
-        <a className="inline-block font-thin tracking-wider a_no-underline">
-          ⭠BACK
-        </a>
-      </Link>
-      <div className="text-4xl font-semibold my-3">
+      <SEO title={frontmatter.title} description={frontmatter.description} />
+      <div className="text-3xl font-semibold mt-3">
         <div className="text-gray-800">
           <span className="text-gray-400">{frontmatter.id} </span>
           {frontmatter.title}
         </div>
       </div>
-      <div className="mb-4 sm:mb-12 text-sm font-light">{frontmatter.date}</div>
+      <div className="my-2 text-gray-700">{frontmatter.description}</div>
+      <div className="mb-4 sm:mb-12 text-base font-light">
+        {frontmatter.date}
+      </div>
       <ReactMarkdown
-        className="text-base md:text-lg leading-7"
+        className="text-base leading-7"
         escapeHtml={false}
         source={content}
         renderers={{ code: CodeBlock }}
       />
+      <Link href="/journal/">
+        <a className="inline-block font-thin tracking-wider a_no-underline bg-gray-300 p-1 rounded-md mt-12">
+          ⭠BACK
+        </a>
+      </Link>
     </article>
   );
 }

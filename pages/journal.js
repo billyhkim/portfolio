@@ -4,7 +4,6 @@ import matter from 'gray-matter';
 import SEO from '../components/SEO';
 
 export default function Journal({ posts }) {
-  console.log(process.env.NEXT_PUBLIC_GA_TRACKING_ID);
   return (
     <>
       <SEO title="Journal" />
@@ -30,7 +29,7 @@ export default function Journal({ posts }) {
                     <div className="text-sm font-light text-gray-800">
                       {date} • {Math.ceil(wordCount / 230)} min read
                     </div>
-                    <div className="my-1 text-lg font-light text-gray-800">
+                    <div className="my-1 text-base font-light text-gray-800">
                       {description}
                     </div>
                   </section>

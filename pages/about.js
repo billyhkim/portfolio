@@ -8,10 +8,10 @@ export default function About() {
       <div className="mb-12 text-4xl">
         <span className="text-red-400">—</span> About
       </div>
-      <div className="text-lg leading-8 mb-12">
+      <div className="text-base leading-8 mb-12">
         <p>
           I'm Billy Kim, a web developer with a background in non-profit
-          leadership. I'm inspired by delightful design, fascinated by coding
+          leadership. I'm inspired by delightful design, fascinated by
           fundamentals, and passionate about all things golf.
         </p>
         <p>
@@ -34,9 +34,13 @@ export default function About() {
       <div className="mt-12 mb-6 text-2xl">
         Future Posts <FcDocument />
       </div>
-      <ul className="text-lg leading-8">
-        <li>Prototyping Lots of Small Things</li>
-        <li>DRY? WET?</li>
+      <ul className="text-base leading-8">
+        <li>CSS Grid</li>
+        <li>
+          if (Bootstrap === 👍🏼 ) <span className="text-red-600">return</span>{' '}
+          Tailwind;
+        </li>
+        <li>Gatsby vs. Next</li>
         <li>Code Challenges: Finding Duplicates</li>
         <li>Code Challenges: Character Map — My Favorite Tool</li>
         <li>Animating with Framer Motion: Route Transitions</li>
