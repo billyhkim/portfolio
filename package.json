@@ -8,20 +8,20 @@
     "start": "next start"
   },
   "dependencies": {
-    "framer-motion": "^2.6.10",
-    "next": "9.5.3",
+    "framer-motion": "^2.9.4",
+    "next": "^10.0.1",
     "postcss-preset-env": "^6.7.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "react-hamburger-menu": "^1.2.1",
     "react-icons": "^3.11.0",
-    "react-markdown": "^4.3.1",
-    "react-syntax-highlighter": "^13.5.3",
+    "react-markdown": "^5.0.2",
+    "react-syntax-highlighter": "^15.3.0",
     "typeface-inter": "^3.15.0",
-    "typeface-public-sans": "^1.1.4"
+    "typeface-public-sans": "^1.1.13"
   },
   "devDependencies": {
     "gray-matter": "^4.0.2",
-    "tailwindcss": "^1.8.6"
+    "tailwindcss": "^1.9.6"
   }
 }
