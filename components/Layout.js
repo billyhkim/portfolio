@@ -43,7 +43,7 @@ export default function Layout({ children }) {
   return (
     <div className="max-w-3xl m-auto px-10 lg:px-0">
       <ul
-        className="list-none flex justify-between items-center pt-6 sm:pt-10 tracking-wider font-light"
+        className="list-none flex justify-between items-center pt-6 sm:pt-10 font-light"
         style={{
           marginBlockStart: 0,
           marginBlockEnd: 0,
@@ -59,12 +59,12 @@ export default function Layout({ children }) {
         </li>
         <li className="text-right hidden sm:inline-block">
           <Link href="/journal/">
-            <a className="text-xl a_no-underline">JOURNAL</a>
+            <a className="text-xl a_no-underline">Journal</a>
           </Link>
         </li>
         <li className="text-right pl-4 hidden sm:inline-block">
           <Link href="/about/">
-            <a className="text-xl a_no-underline">ABOUT</a>
+            <a className="text-xl a_no-underline">About</a>
           </Link>
         </li>
         <div className="text-right inline-block sm:hidden pb-2">
@@ -84,8 +84,8 @@ export default function Layout({ children }) {
 
       <div className="sm:hidden relative">
         <motion.div
-          className="text-right p-12 rounded shadow-xl w-full sm:w-1/2 right-0 absolute text-xl tracking-widest"
-          style={{ backgroundColor: '#f5bfab' }}
+          className="text-right p-12 rounded shadow-xl w-full sm:w-1/2 right-0 absolute text-xl tracking-wide"
+          style={{ backgroundColor: '#f1d1b5' }}
           initial="closed"
           animate={burgerOpen ? 'open' : 'closed'}
           variants={subMenuAnimate}
@@ -96,7 +96,7 @@ export default function Layout({ children }) {
             whileTap={{ scale: 0.95 }}
           >
             <Link href="/">
-              <a onClick={() => setBurgerOpen(false)}>HOME</a>
+              <a onClick={() => setBurgerOpen(false)}>Home</a>
             </Link>
           </motion.div>
           <motion.div
@@ -105,7 +105,7 @@ export default function Layout({ children }) {
             whileTap={{ scale: 0.95 }}
           >
             <Link href="/journal/">
-              <a onClick={() => setBurgerOpen(false)}>JOURNAL</a>
+              <a onClick={() => setBurgerOpen(false)}>Journal</a>
             </Link>
           </motion.div>
           <motion.div
@@ -114,7 +114,7 @@ export default function Layout({ children }) {
             whileTap={{ scale: 0.95 }}
           >
             <Link href="/about/">
-              <a onClick={() => setBurgerOpen(false)}>ABOUT</a>
+              <a onClick={() => setBurgerOpen(false)}>About</a>
             </Link>
           </motion.div>
         </motion.div>
