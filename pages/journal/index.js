@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import fs from 'fs';
 import matter from 'gray-matter';
-import SEO from '../components/SEO';
+import SEO from '../../components/SEO';
 
 export default function Journal({ posts }) {
   return (
     <>
       <SEO title="Journal" />
-      <div className="mb-12 text-4xl font-thin">
+      <div className="mb-12 text-4xl font-light">
         <span className="text-red-400">—</span> Journal
       </div>
       {posts
@@ -16,7 +16,7 @@ export default function Journal({ posts }) {
             frontmatter: { id, title, description, date, wordCount },
             slug,
           }) => (
-            <Link key={slug} href={'/post/[slug]'} as={`/post/${slug}`}>
+            <Link key={slug} href={'/journal/[slug]'} as={`/journal/${slug}`}>
               <a>
                 <article className="hover:bg-gray-300 p-4 rounded-lg transition-all duration-200">
                   <header className="text-2xl font-semibold mb-1">

@@ -10,9 +10,11 @@ import { nord } from 'react-syntax-highlighter/dist/cjs/styles/prism/';
 
 const CodeBlock = ({ language, value }) => {
   return (
-    <SyntaxHighlighter language={language} style={nord}>
-      {value}
-    </SyntaxHighlighter>
+    <div className="py-5">
+      <SyntaxHighlighter language={language} style={nord}>
+        {value}
+      </SyntaxHighlighter>
+    </div>
   );
 };
 
@@ -68,7 +70,12 @@ export async function getStaticProps({ params: { slug } }) {
   const { data, content } = matter(markdownWithMetadata);
 
   // Convert post date to format: Month day, Year
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const options = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    timeZone: 'UTC',
+  };
   const formattedDate = data.date.toLocaleDateString('en-US', options);
 
   const frontmatter = {
