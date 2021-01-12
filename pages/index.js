@@ -23,12 +23,16 @@ export default function Home() {
             <div className="font-light">I'm a web developer.</div>
           </div>
 
-          <div className="text-2xl md:text-3xl mb-3">
+          <div className="text-2xl md:text-3xl mb-6">
             <Link href="/journal/">
-              <a className="block a_no-underline">Journal ⭢</a>
+              <a className="block a_no-underline mb-1">
+                <span className="text-red-400">–</span> Journal
+              </a>
             </Link>
             <Link href="/about/">
-              <a className="block a_no-underline">About ⭢</a>
+              <a className="block a_no-underline">
+                <span className="text-red-400">–</span> About
+              </a>
             </Link>
           </div>
           <div className="flex">
