@@ -5,14 +5,14 @@ export default function About() {
   return (
     <>
       <SEO title="About" />
-      <div className="mb-12 text-4xl">
+      <div className="mb-12 text-4xl font-light">
         <span className="text-red-400">—</span> About
       </div>
       <div className="text-base leading-8 mb-12">
         <p>
           I'm Billy Kim, a web developer with a background in non-profit
           leadership. I'm inspired by delightful design, fascinated by
-          fundamentals, and passionate about all things golf.
+          fundamentals, and love all things golf.
         </p>
         <p>
           I work mostly with JavaScript + React and started writing with the
@@ -32,22 +32,39 @@ export default function About() {
       </div>
       <hr />
       <div className="mt-12 mb-6 text-2xl">
-        Future Posts <FcDocument />
+        Currently Working Through <FcDocument />
       </div>
-      <ul className="text-base leading-8">
-        <li>CSS Grid</li>
-        <li>
-          if (Bootstrap === 👍🏼 ) <span className="text-red-600">return</span>{' '}
-          Tailwind;
-        </li>
-        <li>Gatsby vs. Next</li>
-        <li>Code Challenges: Finding Duplicates</li>
-        <li>Code Challenges: Character Map — My Favorite Tool</li>
-        <li>Animating with Framer Motion: Route Transitions</li>
-        <li>Tutorials Have Their Place</li>
-        <li>Thinking Transition Durations</li>
-        <li>State Management: Zustand</li>
-      </ul>
+      <div className="text-base leading-8">
+        <div>
+          {/* <input type="checkbox" disabled /> if (Bootstrap === 👍🏼){' '}
+          <span className="text-red-600">return</span> Tailwind; */}
+          <input type="checkbox" disabled checked /> Tailwind CSS
+        </div>
+        <div>
+          <input type="checkbox" disabled checked /> Thinking Gatsby vs. Next
+        </div>
+        <div>
+          <input type="checkbox" disabled checked /> Animating with Framer
+          Motion: Route Transitions
+        </div>
+        <div>
+          <input type="checkbox" disabled /> Kent C. Dodds React Tutorial
+        </div>
+        <div>
+          <input type="checkbox" disabled checked /> Thinking About Transition
+          Durations
+        </div>
+        <div>
+          <input type="checkbox" disabled /> State Management: Zustand
+        </div>
+        <div>
+          <input type="checkbox" disabled checked /> Serverless on Netlify
+          Functions
+        </div>
+        <div>
+          <input type="checkbox" disabled checked /> Simple Clock Component
+        </div>
+      </div>
     </>
   );
 }
