@@ -5,7 +5,7 @@ export default {
       name: 'Billy H. Kim',
       summary: 'who builds with React.',
     },
-    description: 'A portfolio created with Next.js and Tailwind.css',
+    description: 'Welcome to billyhkim.com.',
     siteUrl: 'https://billyhkim.com/',
     language: 'en-US',
     social: {
