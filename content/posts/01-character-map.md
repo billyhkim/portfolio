@@ -3,7 +3,7 @@ id: '01'
 title: The First Time I...Learned the Character Map
 description: Feat. reduce()
 date: 2021-01-11
-wordCount: 170
+wordCount: 298
 ---
 
 I loved how my old co-workers would take time before tackling bigger PRs in the afternoons to do some coding exercises. The character map was one of the first neat tools they showed me that proved to be useful for both coding challenges and working with data (of course, with some changes).
