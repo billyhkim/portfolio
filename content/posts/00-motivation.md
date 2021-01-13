@@ -10,4 +10,4 @@ wordCount: 170
 
 Seth Godin's quote reminded me of that time when a mentor shared that it's much more of a peaceful journey through dev when we can openly embrace what we don't know and respond with a glad willingness to figure it out. And, the reality is that growth in anything entails an awareness of some gap in our current levels of expertise and where we envision ourselves going.
 
-To that end, I'm choosing the "_productive way forward_" to make space for what I'm learning. For myself, I'll be utilizing this space to look back and count my findings, but also in hopes that there will be something productive for someone to glean from.
+So, instead of fearing the imposter that looms inside I'm choosing the "_productive way forward_" to make space for what I'm learning. For myself, I'll be utilizing this space to look back and count my findings, but also in hopes that there will be something productive for someone passing by to glean from.
