@@ -29,7 +29,7 @@ const results = Object.keys(characterMap).filter(
     Math.max.apply(null, Object.values(characterMap))
 );
 
-// console.log(results) = ['l', 'o']
+// console.log(results) = ['l']
 ```
 
 Let's walk through this:
