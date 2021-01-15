@@ -50,7 +50,6 @@ export async function getStaticProps() {
     const markdownWithMetadata = fs
       .readFileSync(`content/posts/${filename}`)
       .toString();
-
     const { data } = matter(markdownWithMetadata);
 
     // Convert post date to format: Month day, Year
@@ -60,8 +59,8 @@ export async function getStaticProps() {
       day: 'numeric',
       timeZone: 'UTC',
     };
-    const formattedDate = data.date.toLocaleDateString('en-US', options);
 
+    const formattedDate = data.date.toLocaleDateString('en-US', options);
     const frontmatter = {
       ...data,
       date: formattedDate,
