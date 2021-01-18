@@ -44,7 +44,7 @@ Let's walk through this implementation, with notes on the changes:
 2. We use `forEach()` over `reduce()` to provide an easier reading experience. Instead of the ternary, we opt for an `if-else` statement.
 3. We declare `characterKeysArray` as an added step to take the keys in the `characterMap` object. In the `results` instead of using `apply()` (which allowed us to put the array in directly) was to simply spread the values of the `characterMap`.
 
-While this isn't real code for production, it speaks to the goal helping others inherit code with good intent and execution. This probably applies in some way to every discipline, but readability matters because another human will have to work with the code (or, fight it 😠😆) eventually.
+While this example isn't for production, it speaks to the goal helping others inherit code with good intent and execution. This probably applies in some way to every discipline, but readability matters because another human will have to work with what I produce (or, fight it 😠😆) eventually.
 
 <hr>
 
