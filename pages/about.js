@@ -10,7 +10,7 @@ export default function About() {
       </div>
       <div className="text-base leading-8 mb-12">
         <p>
-          I'm Billy Kim, a web developer with a background in non-profit
+          I'm Billy Kim, a software engineer with a background in non-profit
           leadership. I'm inspired by delightful design, fascinated by
           fundamentals, and love all things golf.
         </p>
@@ -20,14 +20,9 @@ export default function About() {
         </p>
         <p>
           Currently working at{' '}
-          <a
-            href="https://ekkochurch.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ekko Church
-          </a>{' '}
-          in Orange County, CA.
+          <a href="https://dave.com/" target="_blank" rel="noopener noreferrer">
+            Dave
+          </a> - Banking for Humans.
         </p>
       </div>
       <hr />

@@ -20,7 +20,7 @@ export default function Home() {
               </Link>
               .
             </div>
-            <div className="font-light">I'm a web developer.</div>
+            <div className="font-light">I'm a software engineer.</div>
           </div>
 
           <div className="text-2xl md:text-3xl mb-6">
